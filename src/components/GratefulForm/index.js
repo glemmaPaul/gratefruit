@@ -73,7 +73,7 @@ function GratefulForm(props) {
 
                     </form>
                     :
-                    <SuccessfulSubmit onComplete={() => props.onComplete(inputs)} name="Joe" items={inputs} />
+                    <SuccessfulSubmit onComplete={() => props.onComplete(inputs)} items={inputs} />
             }
         </div>
     )
