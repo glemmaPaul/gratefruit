@@ -1,8 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function(props) {
   return (
     <div className="entry-header df aie">
+      <NavLink
+        className="btn btn-auto btn-log c-gold bg-transparent fs12"
+        activeClassName="c-dark-red"
+        to="/logs"
+      >
+        Past Logs
+      </NavLink>
+
       <div className="group df ais pb-">
         <span role="img" aria-label="Emoji" className="fs50 lh1 mr">
           {props.emojis}

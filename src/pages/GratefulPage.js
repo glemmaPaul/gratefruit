@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import firebase from "../firebase";
 import GratefulForm from "../components/GratefulForm";
 import PhoneNumberAuth from "../components/PhoneNumberAuth";
-import DateHeader from "../components/DateHeader";
+import AppHeader from "../components/AppHeader";
 import moment from "moment";
 
 const firestore = firebase.firestore();
@@ -48,7 +48,7 @@ function GratefulPage() {
   return (
     <div>
       <div className="entry">
-        <DateHeader emojis={emoji} data={headerTitle} />
+        <AppHeader emojis={emoji} data={headerTitle} />
 
         <div className="group mt">
           {!entries && <GratefulForm hidden={entries} items="3" onComplete={setEntries} />}
